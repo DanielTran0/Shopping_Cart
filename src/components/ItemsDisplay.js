@@ -19,8 +19,6 @@ function ItemsDisplay(props) {
     });
   };
 
-  //console.log(props, 'ItemsDisplay');
-
   return <div className="ItemsDisplay">{displayDepartmentItems()}</div>;
 }
 

@@ -28,8 +28,6 @@ function Shop() {
     fetchStuff(`${departmentUrl}/accessories`, setItems, 'items');
   }, []);
 
-  //console.log(departments, items);
-
   return (
     <div className="Shop">
       <div className="shopOverview">

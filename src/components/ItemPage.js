@@ -73,8 +73,6 @@ function ItemPage(props) {
     );
   }, [props.match.params.id]);
 
-  //console.log(item);
-
   return (
     <div className="ItemPage">
       <img src={item.product_image_lg} alt={'item'} />

@@ -91,8 +91,6 @@ function Cart({ cart }) {
     return convertToMoney(subTotal + tax + ship);
   };
 
-  //console.log(cartItems);
-
   return (
     <div className="Cart">
       <h1>Cart</h1>
