@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.App {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.fa-star {
+  color: gold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/*===
+  Nav
+  ===*/
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  background-color: lightcyan;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Nav a {
+  margin: 0 30px;
+  text-decoration: none;
+  color: darkorchid;
+}
+
+.Nav a:hover {
+  color: black;
+}
+
+.storeName {
+  display: flex;
+}
+
+.Nav .fa-dice {
+  margin-right: 5px;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+}
+
+.cartNumber {
+  margin-left: 10px;
+}
+
+/*===
+  Home
+  ===*/
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./components/numbers-wallpaper-2560x1440.jpg');
+  background-size: auto;
+  flex: 1 1 auto;
+}
+
+.Home > div {
+  display: flex;
+  flex-direction: column;
+  margin: 15% auto;
+  background-color: rgb(43, 43, 43);
+  color: white;
+  padding: 2em 4em;
+}
+
+.homeTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: darkorchid;
+}
+
+.homeTitle h1 {
+  margin-left: 10px;
+  font-size: 65px;
+}
+
+.slogan {
+  font-size: 20px;
+}
+
+.Home a {
+  margin: auto;
+}
+
+.homeButton {
+  margin: 20px auto;
+  font-size: 20px;
+  border: none;
+  background-color: darkorchid;
+  color: white;
+  padding: 0.8em 4em;
+}
+
+.Home > div > p {
+  text-align: center;
+}
+
+/*====
+  Shop
+  ====*/
+
+.shopOverview {
+  display: flex;
+}
+
+.departments {
+  min-width: 250px;
+  margin-left: 30px;
+}
+
+.departments h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.department {
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.department:hover {
+  text-decoration: underline;
+}
+
+/*==========
+  Shop Items
+  ==========*/
+
+.shopItems > h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ItemsDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.item a {
+  text-decoration: none;
+  color: black;
+}
+
+.item p {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.displayName {
+  font-weight: bold;
+}
+
+.itemDisplayRating {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*=========
+  Item Page 
+  =========*/
+
+.ItemPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ItemPage img {
+  margin: 0 auto;
+}
+
+.itemPageRight {
+  display: flex;
+}
+
+.itemDetails {
+  width: 50%;
+}
+
+.itemDetails > h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.itemDetails > p {
+  font-size: 18px;
+}
+
+.itemPageDes {
+  line-height: 1.5;
+}
+
+.itemPageRating {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.reviews {
+  width: 50%;
+}
+
+.singleReview {
+  margin-bottom: 30px;
+}
+
+.reviews > h2 {
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.reviews > h3 {
+  margin-bottom: 20px;
+}
+
+.reviewHeader {
+  display: flex;
+  margin: 5px 0;
+}
+
+.reviewHeader > p {
+  margin-left: 10px;
+}
+
+.reviewRating {
+  margin-bottom: 10px;
+}
+
+/*==============
+  Item Page Cart
+  ==============*/
+
+.itemPageCart {
+  margin-top: 80px;
+  margin-left: 30px;
+  min-width: 225px;
+  max-width: 225px;
+  height: 170px;
+  border: thin lightgrey solid;
+  padding: 10px;
+}
+
+.itemPagePrice {
+  color: rgb(192, 31, 31);
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.itemPageStock {
+  font-size: 17px;
+}
+
+.itemPageButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemPageQuantity {
+  margin: 15px auto;
+  font-size: 16px;
+}
+
+.itemPageAdd {
+  background-color: lightgreen;
+  border: none;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.itemPageError {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*=====
+  Cart
+  ====*/
+
+.Cart {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.Cart > h1 {
+  text-align: center;
+}
+
+.cartOverview {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.cartItems {
+  margin: 0 auto;
+}
+
+.checkoutItem > :is(p, div) {
+  margin: 5px 0;
+}
+
+.checkoutItem > p {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.checkoutQuantity {
+  font-size: 18px;
+}
+
+.checkoutItem > button {
+  font-size: 16px;
+  margin: 10px auto;
+  border: none;
+  background-color: rgb(190, 26, 26);
+  color: white;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.total {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.total > div {
+  margin: 10px 0;
+}
+
+.checkOut {
+  border: none;
+  background-color: gold;
+  padding: 0.5em 1em;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.checkOutMessage {
+  color: green;
+  font-weight: bold;
+}
+
+@media (max-width: 1150px) {
+  .itemPageRight {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .itemDetails {
+    width: 100%;
+  }
+
+  .itemPageCart {
+    margin: 50px auto;
+
+    border: thin lightgrey solid;
+    padding: 10px;
+  }
+
+  .reviews {
+    width: 80%;
+  }
+
+  .reviews > h2 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .ItemPage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ItemPage img {
+    width: 450px;
+  }
+
+  .itemPageRight {
+    margin: auto;
+  }
+
+  .itemDetails > h1 {
+    margin-top: 0;
+  }
+
+  .reviews {
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .shopOverview {
+    flex-direction: column;
+  }
+
+  .departments {
+    margin: 0;
+    text-align: center;
+  }
+
+  .ItemPage img {
+    width: 350px;
+  }
+
+  .cartOverview {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .Home > div {
+    padding: 1em 2em;
+  }
+
+  .homeTitle h1 {
+    font-size: 45px;
+  }
+
+  .slogan {
+    font-size: 18px;
+  }
+
+  .homeButton {
+    font-size: 20px;
+    padding: 0.6em 2.5em;
+  }
+}
+
+@media (max-width: 374px) {
+  .Nav a {
+    margin: 0 10px;
+  }
+
+  .ItemPage img {
+    width: 300px;
+  }
+}
